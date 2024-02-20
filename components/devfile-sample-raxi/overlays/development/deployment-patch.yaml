@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-raxi
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0003-tenant/tkrw-pr714-0075-0003-app/devfile-sample-raxi@sha256:70eb1dcab0e06bdaedf672c71463bc747994eee92eb38fcb115574494392e594
+        name: my-nodejs
+        resources: {}
+status: {}
